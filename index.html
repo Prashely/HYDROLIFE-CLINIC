@@ -225,6 +225,22 @@
         max-height: 500px;
         opacity: 1;
       }
+      .embed-responsive {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        overflow: hidden;
+        border-radius: 1.5rem;
+        background: #000;
+      }
+      .embed-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
     </style>
   </head>
   <body class="bg-white text-gray-900 antialiased">
@@ -656,6 +672,61 @@
             >
               Learn More <i class="fas fa-arrow-right text-sm"></i>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ RADIO INTERVIEW ═══════════════ -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="fade-in">
+            <p
+              class="text-primary font-semibold uppercase tracking-widest text-xs mb-3"
+            >
+              Mokopane FM Interview
+            </p>
+            <h2
+              class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-5"
+            >
+              Healthy Weight Loss: More Than Just the Scale
+            </h2>
+            <p class="text-gray-600 text-lg leading-relaxed mb-8">
+              An important conversation on healthy weight loss, wellness,
+              emotional eating, nutrition, stress, sleep, and building
+              sustainable habits without shame or pressure.
+            </p>
+            <a
+              href="contact.html"
+              class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-light text-white px-8 py-3.5 rounded-full font-semibold shadow-sm transition"
+            >
+              Book an Appointment
+            </a>
+          </div>
+          <div class="fade-in" style="transition-delay: 0.12s">
+            <div class="embed-responsive mb-4">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2391141028041489&show_text=0"
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="text-center">
+              <a
+                href="https://www.facebook.com/reel/2391141028041489"
+                target="_blank"
+                class="inline-flex items-center justify-center gap-2 border border-gray-200 hover:border-primary text-primary hover:text-primary-light px-6 py-3 rounded-full font-semibold text-sm transition"
+              >
+                Watch the Interview on Facebook
+              </a>
+            </div>
           </div>
         </div>
       </div>
