@@ -121,9 +121,11 @@
       html {
         scroll-behavior: smooth;
       }
-      body {
-        font-family: "DM Sans", sans-serif;
-      }
+      html, body {
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
       .navbar-scrolled {
         box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
@@ -175,12 +177,12 @@
         opacity: 1;
       }
 
-      .wa-float {
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        z-index: 100;
-        animation: pulse-wa 2.5s infinite;
+     .wa-float {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+  animation: pulse-wa 2.5s infinite;
       }
       @keyframes pulse-wa {
         0%,
@@ -623,8 +625,8 @@
     </section>
 
     <!-- ═══════════════ MAP ═══════════════ -->
-    <section class="w-1/2 mx-auto relative py-6">
-      <div class="h-96 border border-primary rounded-2xl overflow-hidden">
+    <section class="w-full mx-auto relative py-6">
+      <div class="h-96 border border-primary rounded-2xl overflow-hidden w-full">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.2!2d29.0136!3d-24.1923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec594e5c3c9c7f1%3A0x1!2sJNA+Centre%2C+69+Pretorius+St%2C+Mokopane!5e0!3m2!1sen!2sza!4v1680000000"
           width="100%"
@@ -830,21 +832,21 @@
             </ul>
           </div>
         </div>
-        <div
-          class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-400"
-        >
-          <span>&copy; 2025 Hydrolife Clinic. All rights reserved.</span>
-          <span
-            >Designed by
-            <a
-              href="https://precisiondesignsagency.com"
-              target="_blank"
-              class="text-gold"
-            >
-              Precision Designs Agency
-            </a></span
-          >
-        </div>
+      <div
+  class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-center items-center gap-2 text-xs text-gray-400"
+>
+  <span>&copy; 2025 Hydrolife Clinic. All rights reserved.</span>
+  <span>
+    Designed by
+    <a
+      href="https://precisiondesignsagency.com"
+      target="_blank"
+      class="text-gold"
+    >
+      Precision Designs Agency
+    </a>
+  </span>
+</div>  
       </div>
     </footer>
 
